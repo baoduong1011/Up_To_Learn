@@ -1,0 +1,102 @@
+.news-main {
+    padding: 30px 0px;
+    background:linear-gradient(to right,#9c27b0,#8ecdff);
+    color: #fff;
+    .news-one {
+        padding: 50px 0px;
+    }
+    .left-news {
+        img {
+            width: 100%;
+        }
+    }
+
+    .feature-news {
+        background: #fff;
+        color: #9c27b0;
+        padding: 30px 0;
+        .col-md-4 {
+            box-shadow: 10px 10px 10px  #888888;
+            padding: 30px;
+        }
+    }
+
+    .news-sign-up {
+        color: #fff;
+        width: 100%;
+        padding: 40px 0px;
+        background:linear-gradient(to right,#9c27b0,#8ecdff);
+        .right-news {
+            form {
+                max-width: 350px;
+                margin: 30px 0px;
+                
+                input {
+                    width: 100%;
+                    padding: 12px 10px;
+                    margin-bottom: 5px;
+                    outline: none;
+                    box-shadow: none;
+                    box-sizing: border-box;
+                    border: 2px solid #f67c92;
+                    
+                    
+                }
+            }
+        }
+        .left-news {
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+.common-btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 10px 0px;
+}
+
+
+
+.line {
+    margin-top: 2%;
+    line-height: 8px;
+    .line-1 {
+        width: 15px;
+        height: 15px;
+        background: #f67c92;
+        display: inline-block;
+    }
+    
+    .line-2 {
+        width: 80px;
+        height: 1px;
+        background: #f67c92;
+        display: inline-block;
+    }
+    
+    .line-3{
+        width: 60px;
+        height: 1px;
+        background: #f67c92;
+        display: inline-block;
+    }
+}

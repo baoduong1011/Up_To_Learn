@@ -24,14 +24,14 @@ export default function KhoaHocTrangChu2() {
         <div className='carousel-course-home'>
         <h3 data-aos="zoom-in-up" className='text-center p-4'>DEAL HOT IN 2022</h3>
             <div className='main'>
-                <div className='information'>
+                <div  className='information'>
                     <div className='overplay'></div>
-                    <img data-aos="zoom-in-up" src="img/mobile.png" className='mobile animate__animated animate__fadeIn animate__delay-0.5s ' />
+                    <img src="img/mobile.png" className='mobile  ' />
 
                 </div>
 
                 <div className='controls'>
-                    <div data-aos="fade-left" className='feature one animate__animated animate__backInRight'>
+                    <div data-aos="fade-left" className='feature one'>
                         <img  src='img/camera.png' />
                         <div>
                             <h1>Tools and Skills</h1>
@@ -39,7 +39,7 @@ export default function KhoaHocTrangChu2() {
                         </div>
                     </div>
 
-                    <div className='feature two animate__animated animate__backInLeft'>
+                    <div  data-aos="fade-right" className='feature two'>
                         <img src='img/processor.png' />
                         <div>
                             <h1>Trainers</h1>
@@ -47,7 +47,7 @@ export default function KhoaHocTrangChu2() {
                         </div>
                     </div>
 
-                    <div className='feature three animate__animated animate__backInRight'>
+                    <div data-aos="fade-left" className='feature three'>
                         <img src='img/display.png' />
                         <div>
                             <h1>Courses</h1>
@@ -56,7 +56,7 @@ export default function KhoaHocTrangChu2() {
 
                     </div>
 
-                    <div data-aos="fade-up" data-aos-anchor-placement="center-center" className='feature four animate__animated animate__backInLeft'>
+                    <div data-aos="fade-right"  className='feature four'>
                         <img src='img/battery.png' />
                         <div>
                             <h1>Technology Life</h1>
