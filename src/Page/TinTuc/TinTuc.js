@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 export default function TinTuc() {
     
     useEffect(() => {
@@ -73,7 +74,7 @@ export default function TinTuc() {
                             <input type='password' placeholder="Enter Password" />
                             <div className='btn-box'>
                                 <button className='common-btn mr-3'>Start Free</button>
-                                <button className='common-btn'>Sign Up</button>
+                                <button className='common-btn'><Link to="/login-register" className="btn-link">Sign Up</Link></button>
                             </div>
                         </form>
                     </div>

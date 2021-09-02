@@ -9,6 +9,8 @@ import DangKy from './Page/DangKy/DangKy';
 import Footer from './Components/Footer/Footer';
 import PageLoginRegister from './Page/UserLogin-Register/PageLoginRegister';
 import AboutMe from './Page/CV/AboutMe';
+import ChiTietKhoaHoc from './Page/ChiTietKhoaHoc/ChiTietKhoaHoc';
+import DanhMucKhoaHoc from './Page/DanhMucKhoaHoc/DanhMucKhoaHoc';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
                 <Route exact path='/' component={TrangChu} />
                 <Route exact path='/login-register' component={PageLoginRegister}/>
                 <Route exact path='/cv-admin-baoduong' component={AboutMe}/>
+                <Route exact path='/khoahoc/:idCourse' component={ChiTietKhoaHoc} />
+                <Route exact path='/danhmuc/:idCategory' component={DanhMucKhoaHoc} />
             </Switch>
             <Footer/>
         </BrowserRouter>

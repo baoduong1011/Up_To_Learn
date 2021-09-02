@@ -6,6 +6,11 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 SwiperCore.use([Navigation, Scrollbar, A11y]);
 export default function KhoaHocTrangChu() {
 
@@ -20,6 +25,7 @@ export default function KhoaHocTrangChu() {
             })
     }, [])
 
+    const dispatch = useDispatch();
 
 
     const [dsKhoaHoc, setDsKhoaHoc] = useState({
@@ -39,7 +45,12 @@ export default function KhoaHocTrangChu() {
                             <h6>{course.ngayTao}</h6>
                             <div className='btn-chuc-nang'>
                                 <button className='btn btn-info'> Add To Cart</button>
-                                <button style={{marginLeft:'10px'}} className='btn btn-success'>Review Course</button>
+                                <Link  onClick={() => {
+                                    dispatch({
+                                        type:"MA_KHOA_HOC",
+                                        data: course.maKhoaHoc,
+                                    })
+                                }}   to={`/khoahoc/${course.maKhoaHoc}`}  style={{marginLeft:'10px'}} className='btn btn-success'>Review Course</Link>
                             </div>
                         </div>
 

@@ -7,6 +7,10 @@ import KhoaHocTrangChu2 from '../../Components/KhoaHocTrangChu/KhoaHocTrangChu2'
 import "animate.css"
 import PosterTrangChu from '../../Components/KhoaHocTrangChu/PosterTrangChu';
 export default function TrangChu() {
+
+    
+
+
     return (
         <div className='home-main'>
         <PosterTrangChu/>

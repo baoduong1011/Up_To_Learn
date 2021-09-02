@@ -64,6 +64,10 @@
     margin-right: 10px;
     margin-top: 10px;
     color: #fff;
+    transition: all 0.5s;
+    &:hover {
+        background: #f67c92;
+    }
 }
 
 .square {
@@ -98,5 +102,15 @@
         height: 1px;
         background: #f67c92;
         display: inline-block;
+    }
+}
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+    outline: none;
+    font-weight: bold;
+    &:hover {
+        color: white;
     }
 }

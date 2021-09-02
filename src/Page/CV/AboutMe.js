@@ -1,6 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+// import  from "../../Redux/reducers/CoursesReducer";
+
+
+
 
 export default function AboutMe() {
+
+    const maKhoaHoc = useSelector(state => state.CoursesReducer.maKhoaHoc);
+
+    console.log(maKhoaHoc);
+
     return (
         <div className="about-me-main">
             <div className="main-container">
