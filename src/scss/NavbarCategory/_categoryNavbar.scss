@@ -1,15 +1,15 @@
 .nav-bar-category {
-    background: #fcfcfc;
+    background:linear-gradient(to right,#9c27b0,#8ecdff);
     margin-bottom: 20px;
     .dropdown {
         width: 400px;
         
         .dropdown-btn {
             padding: 15px 20px;
-            background: #fff;
+            background:linear-gradient(to right,#9c27b0,#8ecdff);
             box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.3);
             font-weight: bold;
-            color: #333;
+            color: #fff;
             display: flex;
             user-select: none;
             align-items: center;
@@ -22,10 +22,10 @@
             top: 110%;
             padding: 10px;
             left: 0;
-            background: #fff;
+            background:linear-gradient(to right,#9c27b0,#8ecdff);
             box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.06);
             font-weight: 500;
-            color: #333;
+            color: #fff;
             width: 95%;
             z-index: 2;
 

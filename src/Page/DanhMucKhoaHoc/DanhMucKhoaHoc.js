@@ -11,7 +11,9 @@ import SwiperCore, {
 } from 'swiper';
 import NavBarCategoty from '../../Components/NavBarCategory/NavBarCategoty';
 import { useSelector } from 'react-redux';
+// import bannerCategory from '../../Components/BannerCategory/bannerCategory';
 // import state from 'sweetalert/typings/modules/state';
+import BannerCategory from '../../Components/BannerCategory/BannerCategory';
 
 SwiperCore.use([Pagination]);
 export default function DanhMucKhoaHoc(props) {
@@ -74,12 +76,21 @@ export default function DanhMucKhoaHoc(props) {
     };
 
     return (
-        <div className='category-courses-main p-5'>
+        <div className='category-courses-main'>
+
+
+            
+
+
+
+            <BannerCategory/>
             <div className='container-fluid  p-5'>
                 <h2>{maDanhMuc}</h2>
-
-                <NavBarCategoty selected={selected} setSelected={setSelected} maDanhMuc={maDanhMuc} maDanhMucClick={maDanhMucClick} />
-                <Swiper slidesPerView={1} spaceBetween={10} pagination={{
+                <h3 className='text-center p-4'> <i class="fa fa-map"></i> C A T E G O R Y</h3>
+                <div className='navBarCategory'>
+                    <NavBarCategoty selected={selected} setSelected={setSelected} maDanhMuc={maDanhMuc} maDanhMucClick={maDanhMucClick} />
+                </div>
+                <Swiper className='p-4' slidesPerView={1} spaceBetween={10} pagination={{
                     "clickable": true
                 }} breakpoints={{
                     "@0.00": {

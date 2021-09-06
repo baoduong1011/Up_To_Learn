@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import swal from 'sweetalert';
+import MyCart from '../MyCart/MyCart';
 
 export default function Header() {
 
@@ -37,28 +38,40 @@ export default function Header() {
                         </li>
 
                         <li style={{ color: 'white' }} className='nav-items'>
-                            {flag ? <span> <i class="fa fa-user"></i> : {localStorage.getItem('taiKhoan')} <span onClick={() => {
+                            {flag ? <span className='my-cart' data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-user"></i> : {localStorage.getItem('taiKhoan')} <span onClick={() => {
                                 localStorage.clear();
-                                
+
                                 swal({
                                     title: "Đăng xuất thành công!",
                                     text: "Cám ơn bạn đã luôn đồng hành cùng Film Studio",
                                     icon: "success",
                                     button: "OK",
                                 })
-                                setTimeout(function() {
+                                setTimeout(function () {
                                     window.location.replace('/trangchu');
-                                },2500)
+                                }, 2500)
                             }} ><i class="fa fa-sign-out-alt"></i></span> </span> : <span></span>}
+
+
+                            
+
                         </li>
 
-                        
+                       
+
+
+
+
+
+
                     </ul>
                     <div className='nav-icons mr-3 pr-5' onClick={handleClick}>
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
                     </div>
                 </div>
             </nav>
+
+            <MyCart/>
         </Fragment>
     )
 }

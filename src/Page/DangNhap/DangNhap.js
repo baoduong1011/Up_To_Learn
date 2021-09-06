@@ -64,6 +64,8 @@ export default function DangNhap() {
                 button: "OK",
             })
 
+            
+
             setTimeout(function() {
                 window.location.replace('/trangchu');
             },2500)
@@ -83,6 +85,11 @@ export default function DangNhap() {
 
     return (
         <div className='login-page  '>
+
+            
+
+
+
             <div className='base-container'>
                 <div className='content animate__animated animate__backInRight'>
                     <div className='header'>
